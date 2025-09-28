@@ -38,7 +38,7 @@ After sending this message on WhatsApp, we will send the code to your WhatsApp n
         // ✅ Correct code, navigate to Link page
         goToLink();
       } else {
-        alert("❌ Incorrect code. If you forgot your code, contact us.");
+        alert("❌ Incorrect code. If you forgot your code, contact us on.");
       }
     } catch (err) {
       console.error(err);
