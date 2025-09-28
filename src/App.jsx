@@ -164,7 +164,11 @@ export default function App() {
             </div>
           </section>
         )}
-        {activeTab === "contact" && <section className="contact-section">{/* Contact & social */}</section>}
+        {activeTab === "contact" && <section className="contact-section"><div className="contact-card">
+      <h1>📬 Contact Us</h1>
+      <p>Email: <a href="mailto:blaisehazakorimana@gmail.com">blaisehazakorimana@gmail.com</a></p>
+      <p>Phone: <a href="tel:+250782042896">+250 782 042 896</a></p> </div>
+      </section>}
 
         {/* Admin */}
         {activeTab === "admin" && user && !showAdmin && <Upload user={user} goToAdmin={() => setShowAdmin(true)} />}

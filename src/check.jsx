@@ -26,11 +26,11 @@ After sending this message on WhatsApp, we will send the code to your WhatsApp n
     setLoading(true);
     try {
       const { data, error } = await supabase
-        .from("codes")
-        .select("*")
-        .eq("phone_number", phone)
-        .eq("code", code)
-        .single();
+  .from("codes")
+  .select("*")
+  .eq("phone_number", phone)
+  .eq("code", code)
+  .maybeSingle();
 
       if (error) throw error;
 
